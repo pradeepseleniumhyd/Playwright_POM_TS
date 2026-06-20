@@ -1,0 +1,39 @@
+{
+  "name": "playwright_pom",
+  "version": "1.0.0",
+  "description": "Playwright Page Object Model Framework with Enhanced HTML Reporting",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:webkit": "npx playwright test --project=webkit",
+    "test:debug": "npx playwright test --debug",
+    "test:ui": "npx playwright test --ui",
+    "report": "npx playwright show-report",
+    "report:allure": "npx allure generate ./allure-results --clean -o ./allure-report && npx allure open ./allure-report",
+    "allure:open": "npx allure open ./allure-report",
+    "allure:clean": "rm -rf allure-results allure-report",
+    "report:json": "node -e \"console.log(JSON.stringify(require('./test-results/test-results.json'), null, 2))\"",
+    "clean": "rm -rf test-results playwright-report allure-results allure-report"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "pom",
+    "allure",
+    "html-report"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "@types/node": "^26.0.0",
+    "allure-commandline": "^2.43.0",
+    "allure-js-commons": "^3.10.0",
+    "allure-playwright": "^3.10.0"
+  }
+}
