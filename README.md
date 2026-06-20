@@ -342,10 +342,4 @@ For issues and questions:
 - Check Playwright documentation: https://playwright.dev
 - Check HTML Reporter docs: https://playwright.dev/docs/test-reporters#html-reporter
 
-## License
 
-ISC License
-
----
-
-**Happy Testing!** 🚀
